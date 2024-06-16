@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像認識のまとめ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 1em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 0.5em;
+        }
+
+        article {
+            margin-bottom: 1em;
+        }
+        
+        .next-button {
+            display: block;
+            margin: 40px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .next-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .image-container {
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 40%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        function goToNextPage() {
+            window.location.href = 'Portfolio_6.html'; // 次のページのURLを指定
+        }
+    </script>    
+</head>
+<body>
+    <header>
+        <h1>特に去年実装を頑張った部分</h1>
+    </header>
+    <main>
+        <section id="technologies">
+            <article>
+                <h3>物体検出</h3>
+                <p>代表的なアルゴリズムであるYOLOを使用し、カラーコーンを識別するということをしました。特に大変だったのはYOLOのバージョンをどれにするのかとどれだけのデータを使用するかを検討するところです。またデータセット制作からraspberry pi4に実装するというところまでを行いました。</p>
+            </article>
+        </section>
+        <section id="applications">
+            <h2>使用例</h2>
+            <article>
+                <h3>ローバーに搭載</h3>
+                <p>ローバーは本来特定のモノを認識しそれに対してアプローチを行うことを目的としたものなので去年制作した教育用ローバーにも搭載することにしました。</p>
+            </article>
+            <article>
+                <h3>メリット</h3>
+                <p>搭載することによるメリットとしては、GPSなどが使えない場所でも目的の場所に認識さえできれば向かわせることができることやGPSでは大金を使わないといけない精度の距離まで近づくことができるなどです。</p>
+            </article>
+            <article>
+                <h3>デメリット</h3>
+                <p>搭載することによるデメリットは、大きく分けると2つあります。一つはraspberrypiの処理が重くなってしまうことで、2つ目は使うことのできるマイコンが限られてしまうことです。他にも電源を大きくしなければいけないなどの問題があります。</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>具体的な機体の写真</h3>
+            </article>
+        </section>
+        <div class="image-container">
+            <img src="2.png" alt="実装したプロジェクトの画像">
+            <img src="1.jpg" alt="実装したプロジェクトの画像2">
+        </div>
+        <button class="next-button" onclick="goToNextPage()">次のページに進む</button>
+    </main>
+</body>
+</html>

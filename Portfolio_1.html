@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>目次</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .section-title {
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .next-button {
+            display: block;
+            margin: 40px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .next-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function goToNextPage() {
+            window.location.href = 'Portfolio_2.html'; // 次のページのURLを指定
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>目次</h1>
+</header>
+
+<section id="section1">
+    <h2 class="section-title">セクション1: 自己紹介</h2>
+    <p>ここでは、簡単な自己紹介をします。</p>
+</section>
+
+<section id="section2">
+    <h2 class="section-title">セクション2: 制作物</h2>
+    <p>大学内での活動で製作したものです。</p>
+</section>
+<section id="section4">
+    <h2 class="section-title">セクション4: スキル一覧</h2>
+    <p>まとめです</p>
+</section>
+
+<a class="next-button" onclick="goToNextPage()">次のページに進む</a>
+
+</body>
+</html>

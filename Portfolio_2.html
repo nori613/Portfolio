@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+        .info {
+            margin-bottom: 10px;
+        }
+        .info span {
+            font-weight: bold;
+            color: #333;
+        }
+        .next-button {
+            display: block;
+            margin: 40px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .next-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function goToNextPage() {
+            window.location.href = 'Portfolio_3.html'; // 次のページのURLを指定
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>自己紹介</h1>
+        <div class="info">
+            <span>氏名:</span> 脇田徳子 (Noriko Wakita)
+        </div>
+        <div class="info">
+            <span>所属:</span> 中部大学理工学部宇宙航空学科2年
+        </div>
+        <div class="info">
+            <span>趣味:</span> 読書、音楽を聴くこと、プログラミング、映画を見ること
+        </div>
+        <div class="info">
+            <span>使用したことのあるプログラム言語:</span> python, c, c++, html, css, javascript
+        </div>
+        <div class="info">
+            <span>自己紹介文:</span> 
+            <p>こんにちは、脇田徳子と申します。中部大学で宇宙航空学を専攻しています。特に探査機と画像について学んでます。趣味は読書と音楽を聴くことで、色々なジャンルを読んだり聞いたりすることが大好きです。プログラミングにも興味があり、日々新しい技術を学んでいます。どうぞよろしくお願いします。</p>
+        </div>
+        <button class="next-button" onclick="goToNextPage()">次のページに進む</button>
+    </div>
+</body>
+</html>
